@@ -3,7 +3,7 @@ base_url = "https://bobrockefeller.com"
 title = "Bob Rockefeller"
 description = "What is Bob up to now?"
 
-compile_sass = false
+compile_sass = true
 
 build_search_index = false
 
