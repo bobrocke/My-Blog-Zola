@@ -1,0 +1,15 @@
+@use "bootstrap.css;";
+
+:root {
+  --bs-font-sans-serif: "PT Sans", "sans-serif";
+  --bs-body-font-family: "PT Serif", "serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-font-sans-serif);
+}
