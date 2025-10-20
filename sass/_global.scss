@@ -14,6 +14,7 @@ Breakpoints
 :root {
   --font-sans: "PT Sans", "sans-serif";
   --font-serif: "PT Serif", "serif";
+  --font-mono: "Monaco", "monospace";
 
   /* https://utopia.fyi/type/calculator?c=390,12,1.2,992,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --text-xs: clamp(0.5208rem, 0.34rem + 0.742vw, 0.8rem);
@@ -56,4 +57,10 @@ Breakpoints
     clamp(0.375rem, -0.9836rem + 5.5738vw, 2.5rem)
   );
   --grid-columns: 6;
+
+  /*
+  Light Theme
+  */
+
+  --color-light-background: lightgray;
 }

@@ -2,8 +2,10 @@
 Semantic Styles for HTML
 */
 
-p:not(:last-of-type) {
-  margin-bottom: var(--space-xs);
+:not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  background-color: var(--color-light-background);
 }
 
 h1,
@@ -32,7 +34,24 @@ p {
   font-size: var(--text-m);
 }
 
+p {
+  margin-bottom: var(--space-xs);
+}
+
+/* p:not(:last-of-type):not(+ ul) {
+  margin-bottom: var(--space-xs);
+} */
+
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-wrap: wrap;
+  margin-bottom: var(--space-xs);
+  padding: var(--space-xs);
+}
+
 ul {
   font-family: var(--font-serif);
   font-size: var(--text-m);
+  margin-bottom: var(--space-xs);
 }
