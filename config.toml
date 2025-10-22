@@ -22,4 +22,10 @@ taxonomies = [
   definition_list = true
 
 [extra]
-# Put all your custom variables here
+
+menus = [
+  { name = "About", url = "/about", trailing_slash = true },
+  { name = "Categories", url = "/categories", trailing_slash = true },
+  { name = "Tags", url = "/tags", trailing_slash = true },
+  { name = "Photos", url = "https://photos.bobrockefeller.com/", trailing_slash = true },
+]

@@ -6,16 +6,20 @@
   {% else %}
     {{ config.title }} | {{ section.title }}
   {% endif %}
-{% endblock %}
+{% endblock title %}
+
+{{ macros::navigation() }}
 
 {% block content %}
   <!--index.html-->
-  <h1>Here we are.</h1>
-  <ul>
-    <!-- If you are using pagination, section.pages will be empty.
-        You need to use the paginator object -->
-    {% for page in paginator.pages %}
-      <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="content">
+    <h1>Here we are.</h1>
+    <ul>
+      <!-- If you are using pagination, section.pages will be empty.
+          You need to use the paginator object -->
+      {% for page in paginator.pages %}
+        <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock content %}

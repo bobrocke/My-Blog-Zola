@@ -2,8 +2,11 @@
 Import all the style sheets in the correct order
 */
 
+@import "bootstrap-icons.scss";
+
 @import "_reset.scss";
 @import "_global.scss";
-@import "_composition.scss";
-@import "_utilities.scss";
+@import "CUBE/_composition.scss";
+@import "CUBE/_utilities.scss";
+@import "CUBE/_blocks.scss";
 @import "_semantics.scss";
