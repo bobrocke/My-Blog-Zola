@@ -24,8 +24,9 @@ taxonomies = [
 [extra]
 
 menus = [
-  { name = "About", url = "/about", trailing_slash = true },
-  { name = "Categories", url = "/categories", trailing_slash = true },
-  { name = "Tags", url = "/tags", trailing_slash = true },
+  { name = "Home", url = "/", trailing_slash = true },
+  { name = "About", url = "/about/", trailing_slash = true },
+  { name = "Categories", url = "/categories/", trailing_slash = true },
+  { name = "Tags", url = "/tags/", trailing_slash = true },
   { name = "Photos", url = "https://photos.bobrockefeller.com/", trailing_slash = true },
 ]

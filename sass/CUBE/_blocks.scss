@@ -3,6 +3,8 @@ Blocks from CUBE CSS
 A block is a skeletal component or organisational structure.
 */
 
+/* Navigation */
+
 nav {
   display: flex;
   align-items: center;
@@ -17,6 +19,20 @@ nav a {
   font-family: var(--font-sans);
 }
 
+nav li {
+  color: var(--color-primary-dim);
+  font-family: var(--font-sans);
+}
+
+nav a:hover {
+  background-color: var(--color-primary-invert);
+  color: var(--bg-color-black);
+}
+
+.nav-list ul {
+  list-style: none;
+}
+
 .top-nav {
   position: relative;
   margin-bottom: var(--space-xs);
@@ -26,15 +42,6 @@ nav a {
   margin-left: auto;
   font-size: var(--text-3xl);
   color: var(--color-primary-invert);
-}
-
-.top-nav a:hover {
-  background-color: var(--color-primary-invert);
-  color: var(--bg-color-black);
-}
-
-.nav-list ul {
-  list-style: none;
 }
 
 .top-nav .nav-list {
@@ -50,6 +57,16 @@ nav a {
   display: none;
 }
 
+.side-nav .nav-list ul {
+  text-align: center;
+  padding: 0;
+  margin-top: var(--space-xs);
+}
+
+.side-nav .nav-list li {
+  padding: var(--space-3xs);
+}
+
 @media (min-width: 576px) {
   .top-nav {
     display: none;
@@ -63,3 +80,5 @@ nav a {
     display: block;
   }
 }
+
+/* Next */
