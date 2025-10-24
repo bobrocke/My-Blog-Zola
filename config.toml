@@ -8,8 +8,8 @@ compile_sass = true
 build_search_index = false
 
 taxonomies = [
-  {name = "tags", paginate_by = 8},
-  {name = "categories", paginate_by = 8},
+  {name = "tags", paginate_by = 4},
+  {name = "categories", paginate_by = 4},
 ]
 
 [markdown]

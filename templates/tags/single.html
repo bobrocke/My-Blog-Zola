@@ -1,11 +1,22 @@
+{% import "macros/macros.html" as macros %}
+
 {% extends "base.html" %}
 
+{% block title %}
+  {{ macros::title(title=term.name)}}
+{% endblock title %}
+
 {%- block content %}
-  <ul>
-    {%- for page in term.pages -%}
-      <li>
-        {{ page.title }}
-      </li>
-    {%- endfor -%}
-  </ul>
+  <div class="content taxonomy">
+    <h1>Posts tagged {{ term.name }}</h1>
+    <ul>
+      {%- for page in term.pages -%}
+        <li>
+          <a href="{{ page.path }}">{{ page.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  {% include "includes/pagination.html" %}
 {%- endblock %}

@@ -1,35 +1,37 @@
-<div class="pagination">
-  <ul>
-    <li>
-      {% if paginator.current_index != 1 %}
-        <a href="{{ paginator.first }}" aria-label="First Page" role="button" title="First Page"><i class="bi bi-rewind-fill"></i></a>
-      {% else %}
-        <span><i class="bi bi-rewind-fill inactive"></i></span>
-      {% endif %}
-    </li>
-    <li>
-      {% if paginator.previous %}
-        <a href="{{ paginator.previous }}" aria-label="Previous Page" role="button" title="Previous Page"><i class="bi bi-caret-left-fill"></i></a>
-      {% else %}
-        <span><i class="bi bi-caret-left-fill inactive"></i></span>
-      {% endif %}
-    </li>
+{% if paginator.number_pagers > 1 %}
+  <div class="pagination">
+    <ul>
+      <li>
+        {% if paginator.current_index != 1 %}
+          <a href="{{ paginator.first }}" aria-label="First Page" role="button" title="First Page"><i class="bi bi-rewind-fill"></i></a>
+        {% else %}
+          <span><i class="bi bi-rewind-fill inactive"></i></span>
+        {% endif %}
+      </li>
+      <li>
+        {% if paginator.previous %}
+          <a href="{{ paginator.previous }}" aria-label="Previous Page" role="button" title="Previous Page"><i class="bi bi-caret-left-fill"></i></a>
+        {% else %}
+          <span><i class="bi bi-caret-left-fill inactive"></i></span>
+        {% endif %}
+      </li>
 
-    <span class="location">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+      <span class="location">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
 
-    <li>
-      {% if paginator.next %}
-        <a href="{{ paginator.next }}" aria-label="Next Page" role="button" title="Next Page"><i class="bi bi-caret-right-fill"></i></a>
-      {% else %}
-        <span><i class="bi bi-caret-right-fill inactive"></i></span>
-      {% endif %}
-    </li>
-    <li>
-      {% if paginator.current_index != paginator.number_pagers %}
-        <a href="{{ paginator.last }}" aria-label="Last Page" role="button" title="Last Page"><i class="bi bi-fast-forward-fill"></i></a>
-      {% else %}
-        <span><i class="bi bi-fast-forward-fill inactive"></i></span>
-      {% endif %}
-    </li>
-  </ul>
-</div>
+      <li>
+        {% if paginator.next %}
+          <a href="{{ paginator.next }}" aria-label="Next Page" role="button" title="Next Page"><i class="bi bi-caret-right-fill"></i></a>
+        {% else %}
+          <span><i class="bi bi-caret-right-fill inactive"></i></span>
+        {% endif %}
+      </li>
+      <li>
+        {% if paginator.current_index != paginator.number_pagers %}
+          <a href="{{ paginator.last }}" aria-label="Last Page" role="button" title="Last Page"><i class="bi bi-fast-forward-fill"></i></a>
+        {% else %}
+          <span><i class="bi bi-fast-forward-fill inactive"></i></span>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+{% endif %}

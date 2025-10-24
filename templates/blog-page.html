@@ -1,11 +1,9 @@
+{% import "macros/macros.html" as macros %}
+
 {% extends "base.html" %}
 
 {% block title %}
-  {% if config.mode == "serve" %}
-    Zola | {{ page.title }}
-  {% else %}
-    {{ config.title }} | {{ page.title }}
-  {% endif %}
+  {{ macros::title(title = page.title) }}
 {% endblock title %}
 
 {% block content %}

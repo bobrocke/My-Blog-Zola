@@ -1,1 +1,7 @@
-
+{% macro title(title) %}
+  {% if config.mode == "serve" %}
+    Zola | {{ title }}
+  {% else %}
+    {{ config.title }} | {{ title }}
+  {% endif %}
+{% endmacro %}

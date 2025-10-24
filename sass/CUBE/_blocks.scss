@@ -116,3 +116,21 @@ nav a:hover {
 .pagination .bi-caret-right-fill {
   margin-right: var(--space-3xs);
 }
+
+/* Taxonomy */
+
+.taxonomy ul {
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  margin-top: var(--space-s);
+}
+
+.taxonomy a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.taxonomy a:hover {
+  color: var(--color-primary-highlight);
+}
