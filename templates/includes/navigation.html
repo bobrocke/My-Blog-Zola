@@ -11,7 +11,7 @@
      <ul>
        {% for menu in config.extra.menus %}
          {% if current_path == menu.url %}
-           <li>{{ menu.name }}</li>
+           <li class="inactive">{{ menu.name }}</li>
          {% else %}
            <li><a href="{{menu.url}}">{{menu.name}}</a></li>
          {% endif %}
@@ -27,7 +27,7 @@
      <ul>
        {% for menu in config.extra.menus %}
          {% if current_path == menu.url %}
-           <li>{{ menu.name }}</li>
+           <li class="inactive">{{ menu.name }}</li>
          {% else %}
            <li><a href="{{menu.url}}">{{menu.name}}</a></li>
          {% endif %}

@@ -20,13 +20,11 @@ nav a {
 }
 
 nav li {
-  color: var(--color-primary-dim);
   font-family: var(--font-sans);
 }
 
 nav a:hover {
-  background-color: var(--color-primary-invert);
-  color: var(--bg-color-black);
+  color: var(--color-primary-highlight);
 }
 
 .nav-list ul {
@@ -81,4 +79,40 @@ nav a:hover {
   }
 }
 
-/* Next */
+/* Pagination */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-m);
+}
+
+.pagination ul {
+  display: flex;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+
+.pagination ul a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.pagination ul a:hover {
+  color: var(--color-primary-highlight);
+}
+
+.pagination .location {
+  margin-left: var(--space-s);
+  margin-right: var(--space-s);
+}
+
+.pagination .bi-caret-left-fill {
+  margin-left: var(--space-3xs);
+}
+
+.pagination .bi-caret-right-fill {
+  margin-right: var(--space-3xs);
+}

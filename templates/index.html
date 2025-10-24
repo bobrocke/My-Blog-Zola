@@ -13,7 +13,7 @@
 {% block content %}
   <!--index.html-->
   <div class="content">
-    <h1>Here we are.</h1>
+    <h1>Blog</h1>
     <ul>
       <!-- If you are using pagination, section.pages will be empty.
           You need to use the paginator object -->
@@ -22,4 +22,6 @@
       {% endfor %}
     </ul>
   </div>
+
+  {% include "includes/pagination.html" %}
 {% endblock content %}
