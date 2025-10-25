@@ -4,10 +4,9 @@ summary: Consistent with my shifting attention in web development, I’ve had my
 date: 2023-04-03 21:33:13
 publish: true
 pin: false
-categories:
-  - Photography
-  - Web Development
-tags: [Squarespace]
+taxonomies:
+  categories: [Photography, Web Development]
+  tags: [Squarespace]
 ---
 
 Consistent with my shifting attention in web development, I’ve had my photo galleries in all sorts of Content Management Systems (CMSs) over the years. One feature most of those systems shared was the complexity of uploading new images or replacing old ones. My desire to simplify both my web development platform and keeping my images current has led me to Squarespace.

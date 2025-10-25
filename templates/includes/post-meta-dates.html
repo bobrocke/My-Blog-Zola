@@ -1,0 +1,6 @@
+<div class="blog-meta blog-dates">
+  <i class="bi bi-calendar"></i>&nbsp;&nbsp;{{ page.date | date(format = "%B %e, %Y") }}
+  {% if page.updated %}
+    &nbsp;&nbsp;Revised: {{ page.updated | date(format = "%B %e, %Y") }}
+  {% endif %}
+</div>

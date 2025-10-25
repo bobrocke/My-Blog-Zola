@@ -1,7 +1,7 @@
 ---
 title: Moving to DxO PhotoLab 9
 date: 2025-09-10
-lastmod: 2025-09-26
+updated: 2025-09-26
 summary:
 description:
 draft: false

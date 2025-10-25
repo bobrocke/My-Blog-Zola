@@ -3,7 +3,9 @@ Blocks from CUBE CSS
 A block is a skeletal component or organisational structure.
 */
 
-/* Navigation */
+/*
+Navigation
+*/
 
 nav {
   display: flex;
@@ -79,7 +81,9 @@ nav a:hover {
   }
 }
 
-/* Pagination */
+/*
+Pagination
+*/
 
 .pagination {
   display: flex;
@@ -117,13 +121,14 @@ nav a:hover {
   margin-right: var(--space-3xs);
 }
 
-/* Taxonomy */
+/*
+Taxonomy
+*/
 
 .taxonomy ul {
   list-style: none;
   font-family: var(--font-sans);
   font-size: var(--text-lg);
-  margin-top: var(--space-s);
 }
 
 .taxonomy a {
@@ -133,4 +138,53 @@ nav a:hover {
 
 .taxonomy a:hover {
   color: var(--color-primary-highlight);
+}
+
+/*
+Blog
+*/
+
+.blog-title a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.blog-title a:hover {
+  color: var(--color-primary-highlight);
+}
+
+.blog-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+}
+
+.blog-meta a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.blog-meta a:hover {
+  color: var(--color-primary-highlight);
+}
+
+.blog-meta.blog-dates {
+  margin-bottom: calc(var(--space-3xs) * -1);
+}
+
+.blog-meta.blog-taxonomies {
+  margin-top: calc(var(--space-3xs) * -1);
+  margin-bottom: var(--space-xs);
+}
+
+.prose a {
+  text-decoration: underline dotted;
+  color: var(--color-primary);
+}
+
+.prose a:hover {
+  color: var(--color-primary-highlight);
+}
+
+.prose.post-summary {
+  margin-bottom: var(--space-l);
 }

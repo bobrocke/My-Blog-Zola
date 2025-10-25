@@ -4,7 +4,7 @@
 
 {% block title %}
   {% set title = "Categories" %}
-  {{ macros::title(title=title)}}
+  {{ macros::title(title = title)}}
 {% endblock title %}
 
 {%- block content %}
@@ -15,6 +15,10 @@
         <li>
           <a href="{{ term.permalink | safe }}">{{ term.name }} </a>
         </li>
+        {% include "includes/post-meta-taxonomy.html" %}
+        <div class="prose post-summary">
+          {{ page.summary | safe }}
+        </div>
       {%- endfor -%}
     </ul>
   </div>
