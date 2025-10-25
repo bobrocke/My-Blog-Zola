@@ -1,0 +1,22 @@
+<div class="page-nav">
+  {% if page.lower %}
+    <div class="previous">
+      <a href="{{ page.lower.permalink }}"><i class="bi bi-caret-left-fill"></i>Next Newer Post</a>
+    </div>
+  {% else %}
+    <div class="previous inactive">
+      <i class="bi bi-caret-left-fill"></i>Next Newer Post
+    </div>
+  {% endif %}
+
+  {% if page.higher %}
+    <div class="next">
+      <a href="{{ page.higher.permalink }}">Next Older Post<i class="bi bi-caret-right-fill"></i></a>
+    </div>
+  {% else %}
+    <div class="next inactive">
+      Next Older Post<i class="bi bi-caret-right-fill"></i>
+    </div>
+  {% endif %}
+
+</div>

@@ -9,16 +9,12 @@
 
 {%- block content %}
   <div class="content taxonomy">
-    <h1>Categories</h1>
+    <h1 class="heading">Categories</h1>
     <ul>
       {%- for term in terms -%}
         <li>
           <a href="{{ term.permalink | safe }}">{{ term.name }} </a>
         </li>
-        {% include "includes/post-meta-taxonomy.html" %}
-        <div class="prose post-summary">
-          {{ page.summary | safe }}
-        </div>
       {%- endfor -%}
     </ul>
   </div>

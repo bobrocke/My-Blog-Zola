@@ -8,14 +8,17 @@
 
 {%- block content %}
   <div class="content taxonomy">
-    <h1>Posts tagged {{ term.name }}</h1>
-    <ul>
+    <h1 class="heading">Posts tagged {{ term.name }}</h1>
+    <div>
       {%- for page in term.pages -%}
-        <li>
-          <a href="{{ page.path }}">{{ page.title }}</a>
-        </li>
+        {% include "includes/post-meta-dates.html" %}
+        <h2 class="blog-title"><a href="{{ page.path }}">{{ page.title }}</a></h2>
+        {% include "includes/post-meta-taxonomy.html" %}
+        <div class="prose post-summary">
+          {{ page.summary | safe }}
+        </div>
       {%- endfor -%}
-    </ul>
+    </div>
   </div>
 
   {% include "includes/pagination.html" %}

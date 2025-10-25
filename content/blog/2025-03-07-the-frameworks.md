@@ -1,10 +1,10 @@
 ---
 title: The Frameworks
-image:
-categories: [Web Development]
-tags:
-toc: false
 date: 2025-03-07 18:53:00
+taxonomies:
+  categories: [Web Development]
+  tags:
+toc: false
 ---
 
 Getting my simple web application started and then deployed has been an excellent learning experience. And thank goodness for the fine documentation and guides to the frameworks I've tried. As a bonus, it's all almost free!

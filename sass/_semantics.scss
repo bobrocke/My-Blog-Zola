@@ -8,6 +8,19 @@ Semantic Styles for HTML
   background-color: var(--bg-color-light);
 }
 
+dd {
+  font-family: var(--font-serif);
+  font-size: var(--text-m);
+  margin-left: var(--space-s);
+  margin-bottom: var(--space-xs);
+}
+
+dt {
+  font-family: var(--font-serif);
+  font-size: var(--text-m);
+  font-weight: bold;
+}
+
 h1,
 h2,
 h3,
@@ -36,6 +49,10 @@ p {
 
 p {
   margin-bottom: var(--space-xs);
+}
+
+p + ul {
+  margin-top: calc(var(--space-xs) * -1);
 }
 
 /* p:not(:last-of-type):not(+ ul) {

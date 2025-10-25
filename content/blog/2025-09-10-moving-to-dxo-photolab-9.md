@@ -51,7 +51,7 @@ I can see the argument for leaving some features to other applications such as P
 
 PhotoLab is not an inexpensive program. At $240 for the application, it’s the same price a year’s subscription to Lightroom together with Photoshop. If you add in FilmPack (to provide creative vignettes, microcontrast control, split toning, luminance masking, and many different traditional film looks) and ViewPoint (for horizontal/vertical flip, excellent perspective corrections, and the ability to warp and stretch), you’re up to $370 if you get the package deal. Annual upgrades for PhotoLab are $120 currently, the same price of a Lightroom yearly subscription.
 
-Regardless of which application you use, the cost is far less than just one nice lens. So I don't make too much a deal of cost, but I can't ignore it, either.
+Regardless of which application you use, the cost is far less than just one nice lens. So I don't make too much of a deal about cost, but I can't ignore it, either.
 
 ## I've Switched
 

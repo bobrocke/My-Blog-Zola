@@ -155,7 +155,7 @@ Blog
 
 .blog-meta {
   font-family: var(--font-sans);
-  font-size: var(--text-xs);
+  font-size: var(--text-s);
 }
 
 .blog-meta a {
@@ -187,4 +187,31 @@ Blog
 
 .prose.post-summary {
   margin-bottom: var(--space-l);
+}
+
+/*
+Previous/Next Navigation
+*/
+
+.page-nav {
+  display: flex-container;
+  font-family: var(--font-sans);
+  font-size: var(--text-m);
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.page-nav a:hover {
+  color: var(--color-primary-highlight);
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
 }
