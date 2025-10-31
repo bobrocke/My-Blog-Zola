@@ -5,9 +5,9 @@ date: 2023-09-06 23:27:06
 publish: true
 pin: false
 toc: false
-categories:
-  - Photography Software
-tags: []
+taxonomies:
+  categories: [Photography Software]
+  tags: []
 ---
 
 I’ve spent the last couple of months working back and forth between the raw processors [Capture One](https://www.captureone.com/en), [Lightroom Classic](https://www.adobe.com/products/photoshop-lightroom-classic.html), [PhotoLab Elite](https://www.dxo.com/dxo-photolab/), and [Photo RAW](https://www.on1.com/products/photo-raw/) in an attempt to settle on just one going into 2024. Owning more than one is just too expensive and too complicated trying to keep edits and metadata in sync. My primary raw post-processing tools have been Capture One and Lightroom Classic. So that’s where I started my efforts.
@@ -16,7 +16,7 @@ I’ve spent the last couple of months working back and forth between the raw pr
 
 Needless to say, attempting to compare and select from these very capable applications isn’t easy. To try making it more so, I decided to use a [_decision matrix_](https://en.wikipedia.org/wiki/Decision_matrix#:~:text=A%20decision%20matrix%20is%20a,based%20on%20certain%20decision%20criteria.) in an attempt to force more objectivity into a greatly subjective choice.
 
-### Selection Criteria
+## Selection Criteria
 
 So I began with a list of characteristics, or feature sets, that I thought were most important to my choice:
 
@@ -34,7 +34,7 @@ The question of a subscription or perpetual license model is not a deciding fact
 
 For you, there may be more or different criteria to measure. As you’ll see, it’s pretty easy to create your own decision matrix.
 
-### Selection Weighting
+## Selection Weighting
 
 With the characteristics selected, I needed to weigh each one in relation to the others. Of the important things, which was most important? Which was the least? That, of course, took some thinking and shuffling to get them ‘right’ in my mind.
 
@@ -45,7 +45,7 @@ Here are the guidelines I used in constructing my decision matrix:
 - Weighted Score – weighting times score
 - Highest weighted score ‘wins.’
 
-### Application Ranking
+## Application Ranking
 
 The hard part. These are my highlights and lowlights for each application:
 
@@ -54,7 +54,7 @@ The hard part. These are my highlights and lowlights for each application:
 - PhotoLab Elite – the newcomer and pure conversion champion. Best-in-class raw conversion together with best-in-class lens corrections gives a fantastic starting point for editing. But a poor DAM and limited masking hurt its overall performance.
 - Photo RAW – the jack of all trades, master of none. A poor starting point for editing combined with a DAM that is just barely off the pace doesn’t make up for the impressive adjustment and masking features.
 
-### The Matrix
+## The Matrix
 
 No, not that matrix!
 

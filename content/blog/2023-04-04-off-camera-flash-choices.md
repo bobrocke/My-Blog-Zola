@@ -4,9 +4,9 @@ summary: My off-camera flash 'system' has been a mishmash of equipment. Clearly,
 date: 2023-04-04 21:55:27
 publish: true
 pin: false
-categories:
-  - Photography Gear
-tags: [Godox, Profoto]
+taxonomies:
+  categories: [Photography Gear]
+  tags: [Godox, Profoto]
 ---
 
 For several years my battery-powered off-camera flash ‘system’ has been a mishmash of equipment. I had a matched pair of optically-triggered speedlights with TTL, a fully manual radio-triggered strobe (discontinued), and a fully manual radio-triggered speedlight (discontinued). My light modifiers were another collection of umbrellas and softboxes from various manufacturers assembled with little rhyme or reason. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.

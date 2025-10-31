@@ -33,6 +33,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 
     <link rel="stylesheet" href="/styles.css">
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
   </head>
 
   <body>
@@ -40,7 +49,10 @@
 
     {% block content %}
     {% endblock content %}
+
+    {% include "includes/footer.html" %}
   </body>
 
   <script src="/js/main.js"></script>
+  <script src="/js/lightbox.js"></script>
 </html>

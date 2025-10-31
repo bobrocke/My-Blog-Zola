@@ -4,9 +4,9 @@ date: 2024-06-01 15:11:18
 summary: I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol and I still like it. These pistols are niche firearms that offer a unique design not found together in any other current pistol that I know. And if you have had a chance to shoot one, you'll know exactly what I mean by unique.
 publish: true
 pin: false
-categories:
-  - Competition Pistols
-tags: [Laugo Arms Alien]
+taxonomies:
+  categories: [Competition Pistols]
+  tags: [Laugo Arms Alien]
 ---
 
 I've started back shooting a [Laugo Arms Alien](https://laugoarmsusa.com) pistol and I still like it. These pistols are niche firearms that offer a unique design not found together in any other current pistol that I know. And if you have had a chance to shoot one, you'll know exactly what I mean by unique.

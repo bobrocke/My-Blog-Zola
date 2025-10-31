@@ -4,9 +4,9 @@ summary: The first thing to know about bird photography is that it’s hard. And
 date: 2023-04-26 22:40:08
 publish: true
 pin: false
-categories:
-  - Photography
-tags: []
+taxonomies:
+  categories: [Photography]
+  tags: []
 ---
 
 The first thing to know about bird photography is that it’s hard. And the second thing to know is that you will need a long lens.

@@ -4,9 +4,9 @@ date: 2024-01-17 18:56:55
 summary: The M&P Competitor, that is. After IPSC Nationals in November of 2023, I got started practicing and shooting matches with the M&P Competitor. That has worked out pretty well.
 publish: true
 pin: false
-categories:
-  - Competition Pistols
-tags: [M&P Competitor]
+taxonomies:
+  categories: [Competition Pistols]
+  tags: [M&P Competitor]
 ---
 
 The M&P Competitor, that is. After IPSC Nationals in November of 2023, I got started practicing and shooting matches with the M&P Competitor. That has worked out pretty well.

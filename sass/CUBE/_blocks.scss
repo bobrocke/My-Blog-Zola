@@ -29,8 +29,13 @@ nav a:hover {
   color: var(--color-primary-highlight);
 }
 
+nav li.button:hover {
+  color: var(--color-primary-highlight);
+}
+
 .nav-list ul {
   list-style: none;
+  padding-left: var(--space-m);
 }
 
 .top-nav {
@@ -48,8 +53,8 @@ nav a:hover {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   width: 100%;
+  left: 0;
   background-color: var(--bg-color-black);
 }
 
@@ -65,6 +70,11 @@ nav a:hover {
 
 .side-nav .nav-list li {
   padding: var(--space-3xs);
+}
+
+.side-nav .copyright {
+  margin-top: var(--space-m);
+  font-size: var(--text-xs);
 }
 
 @media (min-width: 576px) {
@@ -155,7 +165,7 @@ Blog
 
 .blog-meta {
   font-family: var(--font-sans);
-  font-size: var(--text-s);
+  font-size: var(--text-sm);
 }
 
 .blog-meta a {
@@ -214,4 +224,31 @@ Previous/Next Navigation
 
 .next {
   float: right;
+}
+
+/*
+Footer
+*/
+
+footer {
+  background-color: var(--bg-color-black);
+  padding: var(--space-xs);
+  color: var(--color-primary-invert);
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+}
+
+footer a {
+  color: var(--color-primary-invert);
+  margin-left: var(--space-xs);
+}
+
+footer a:hover {
+  color: var(--color-primary-highlight);
 }

@@ -4,8 +4,9 @@ date: 2024-06-05 13:20:41
 publish: true
 pin: false
 summary: Perhaps the most important thing to control for reliable operation of the Alien pistol is the ammunition used. Because of the gas system that delays blowback, the wrong ammo will lead to unnecessary buildup and finally, failure to cycle the slide.
-categories: [Competition Pistols]
-tags: [Laugo Arms Alien]
+taxonomies:
+  categories: [Competition Pistols]
+  tags: [Laugo Arms Alien]
 ---
 
 Perhaps the most important thing to control for reliable operation of the Alien pistol is the ammunition used. Because of the gas system that delays blowback, the wrong ammo will lead to unnecessary buildup and finally, failure to cycle the slide.

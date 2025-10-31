@@ -2,7 +2,10 @@
 Import all the style sheets in the correct order
 */
 
-@import "bootstrap-icons.scss";
+@import "_bootstrap-icons.scss";
+@import "_fontawesome.scss";
+@import "_brands.scss";
+@import "_lightbox.scss";
 
 @import "_reset.scss";
 @import "_global.scss";

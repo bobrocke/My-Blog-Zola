@@ -10,3 +10,11 @@ CSS classes that do one job and do that one job well.
 .inactive {
   color: var(--color-primary-dim);
 }
+
+.flex-left {
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}

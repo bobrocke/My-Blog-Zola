@@ -1,7 +1,7 @@
 ---
 title: Settling on TailwindCSS
 date: 2025-04-30
-lastmod: 2025-05-10
+updated: 2025-05-10
 summary:
 description:
 draft: false
