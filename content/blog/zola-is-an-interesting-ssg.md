@@ -10,3 +10,7 @@ draft: true
 Start writing your post here...
 
 <!--more-->
+
+`zola check`
+
+speed vs hugo
