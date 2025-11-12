@@ -13,6 +13,8 @@ nav {
   background-color: var(--bg-color-black);
   padding: var(--space-xs);
   color: var(--color-primary-invert);
+  position: relative;
+  margin-bottom: var(--space-xs);
 }
 
 nav a {
@@ -29,27 +31,25 @@ nav a:hover {
   color: var(--color-primary-highlight);
 }
 
-nav li.button:hover {
-  color: var(--color-primary-highlight);
-}
-
-.nav-list ul {
-  list-style: none;
-  padding-left: var(--space-m);
-}
-
-.top-nav {
-  position: relative;
-  margin-bottom: var(--space-xs);
-}
-
-.top-nav a.icon {
+nav a.icon {
   margin-left: auto;
   font-size: var(--text-3xl);
   color: var(--color-primary-invert);
 }
 
-.top-nav .nav-list {
+nav li.button:hover {
+  color: var(--color-primary-highlight);
+}
+
+nav .vert-logo {
+  display: none;
+}
+
+nav .links {
+  display: none;
+}
+
+nav .nav-list {
   display: none;
   position: absolute;
   top: 100%;
@@ -58,35 +58,49 @@ nav li.button:hover {
   background-color: var(--bg-color-black);
 }
 
-.side-nav {
-  display: none;
+nav .nav-list ul {
+  list-style: none;
+  padding-left: var(--space-m);
 }
 
-.side-nav .nav-list ul {
-  text-align: center;
-  padding: 0;
-  margin-top: var(--space-xs);
-}
-
-.side-nav .nav-list li {
-  padding: var(--space-3xs);
-}
-
-.side-nav .copyright {
+nav .copyright {
   margin-top: var(--space-m);
   font-size: var(--text-xs);
 }
 
 @media (min-width: 576px) {
-  .top-nav {
-    display: none;
-  }
-
-  .nav-list {
+  nav {
     display: block;
   }
 
-  .side-nav {
+  nav .vert-logo {
+    display: block;
+  }
+
+  nav .horiz-logo {
+    display: none;
+  }
+
+  nav a.icon {
+    display: none;
+  }
+
+  nav .nav-list {
+    display: block;
+    position: static;
+  }
+
+  nav .nav-list ul {
+    text-align: center;
+    padding: 0;
+    margin-top: var(--space-xs);
+  }
+
+  nav .nav-list li {
+    padding: var(--space-3xs);
+  }
+
+  nav .links {
     display: block;
   }
 }
