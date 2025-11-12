@@ -37,7 +37,13 @@ nav a.icon {
   color: var(--color-primary-invert);
 }
 
-nav li.button:hover {
+button#theme-toggle {
+  color: var(--color-primary-invert);
+  background-color: var(--bg-color-black);
+  border-style: none;
+}
+
+button#theme-toggle:hover {
   color: var(--color-primary-highlight);
 }
 
@@ -180,11 +186,12 @@ Blog
 .blog-meta {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
+  color: var(--color-primary-dim);
 }
 
 .blog-meta a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-primary-dim);
 }
 
 .blog-meta a:hover {

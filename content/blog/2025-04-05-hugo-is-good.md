@@ -35,7 +35,7 @@ But there's a bit more of a learning curve for Hugo than the others. Hugo is an 
 
 I don't find Hugo's [documentation](https://gohugo.io/documentation/) easy to navigate, so I often use a web search to find what I need. When I get stuck, which is often, I've gotten excellent help on [their Discourse forum](https://discourse.gohugo.io/).
 
-After some time at it, I'm getting more comfortable with the things in Hugo that seemed odd to me at first. But the way that Hugo [finds layouts](https://gohugo.io/templates/lookup-order/#home-templates) still makes me think hard.
+After some time at it, I'm getting more comfortable with the things in Hugo that seemed odd to me at first. But the way that Hugo [finds layouts](https://gohugo.io/templates/lookup-order/) still makes me think hard.
 
 On the good side, this is all it takes to output a nicely formatted date: `{{ .Date | time.Format ":date_long" }}`. In 11ty, you start with `{{ modifiedDate | postDate }}` and then write the `postDate` filter:
 

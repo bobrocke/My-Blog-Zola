@@ -32,12 +32,9 @@ taxonomies:
 draft: true
 ---
 
-# $POST_TITLE
-
 Start writing your post here...
+
+<!--more-->
 EOF
 
-echo "Created new post (no "): $FILE_PATH"
-# Open the file for editing (optional)
-open "$FILE_PATH" # macOS
-# xdg-open "$FILE_PATH" # Linux
+echo "Created new post:" $FILE_PATH

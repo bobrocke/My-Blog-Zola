@@ -7,10 +7,10 @@
 {% endblock title %}
 
 {%- block content %}
-  <div class="content taxonomy">
+  <div class="content">
     <h1 class="heading">Posts tagged {{ term.name }}</h1>
     <div>
-      {%- for page in term.pages -%}
+      {%- for page in paginator.pages -%}
         {% include "includes/post-meta-dates.html" %}
         <h2 class="blog-title"><a href="{{ page.path }}">{{ page.title }}</a></h2>
         {% include "includes/post-meta-taxonomy.html" %}
