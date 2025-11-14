@@ -5,6 +5,10 @@ Semantic Styles for HTML
 :not(pre) > code {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
+  font-weight: bold;
+}
+
+body {
   background-color: var(--bg-color-light);
 }
 
@@ -25,6 +29,7 @@ figcaption {
   text-align: center !important;
   font-size: 0.85rem;
   margin-top: 0 !important;
+  font-family: var(--font-sans);
 }
 
 h1,
@@ -34,6 +39,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-sans);
+  color: var(--color-primary);
 }
 
 h1 {

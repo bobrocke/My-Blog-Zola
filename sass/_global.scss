@@ -61,11 +61,18 @@ Breakpoints
   /*
   Light Theme
   */
-
   --bg-color-light: lightgray;
   --bg-color-black: black;
   --color-primary: black;
   --color-primary-dim: gray;
   --color-primary-invert: white;
   --color-primary-highlight: red;
+}
+
+/*
+Dark Theme
+*/
+.dark {
+  --bg-color-light: gray;
+  --color-primary-dim: DarkGray;
 }
