@@ -228,9 +228,11 @@ Previous/Next Navigation
 */
 
 .page-nav {
-  display: flex-container;
+  display: flex;
+  justify-content: space-between;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
+  margin-bottom: var(--space-s);
 }
 
 .page-nav a {
@@ -239,40 +241,5 @@ Previous/Next Navigation
 }
 
 .page-nav a:hover {
-  color: var(--color-primary-highlight);
-}
-
-.previous {
-  float: left;
-}
-
-.next {
-  float: right;
-}
-
-/*
-Footer
-*/
-
-footer {
-  background-color: var(--bg-color-black);
-  padding: var(--space-xs);
-  color: var(--color-primary-invert);
-}
-
-footer ul {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0;
-  font-family: var(--font-sans);
-  font-size: var(--text-xs);
-}
-
-footer a {
-  color: var(--color-primary-invert);
-  margin-left: var(--space-xs);
-}
-
-footer a:hover {
   color: var(--color-primary-highlight);
 }
