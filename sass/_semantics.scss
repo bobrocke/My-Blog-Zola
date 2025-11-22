@@ -35,6 +35,30 @@ figcaption {
   font-family: var(--font-sans);
 }
 
+footer {
+  display: flex;
+  background-color: var(--bg-color-black);
+  padding: var(--space-xs);
+  color: var(--color-primary-invert);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--color-primary-invert);
+  margin-left: var(--space-xs);
+}
+
+footer a:hover {
+  color: var(--color-primary-highlight);
+}
+
 h1,
 h2,
 h3,
