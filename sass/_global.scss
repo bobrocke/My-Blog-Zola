@@ -61,7 +61,8 @@ Breakpoints
   /*
   Light Theme
   */
-  --bg-color-light: lightgray;
+  --bg-color-lightest: Gainsboro;
+  --bg-color-light: Silver;
   --bg-color-black: black;
   --color-primary: black;
   --color-primary-dim: gray;
@@ -73,6 +74,7 @@ Breakpoints
 Dark Theme
 */
 .dark {
-  --bg-color-light: gray;
+  --bg-color-lightest: LightGray;
+  --bg-color-light: DarkGray;
   --color-primary-dim: DarkGray;
 }

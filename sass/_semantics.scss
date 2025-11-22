@@ -6,6 +6,9 @@ Semantic Styles for HTML
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: bold;
+  background-color: var(--bg-color-lightest);
+  padding: 0px 4px;
+  border-radius: 5px;
 }
 
 body {
