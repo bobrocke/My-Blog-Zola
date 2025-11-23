@@ -59,22 +59,43 @@ Breakpoints
   --grid-columns: 6;
 
   /*
+  Grays
+  */
+
+  --color-gray-0: #f2f2f2;
+  --color-gray-10: #d3d3d3;
+  --color-gray-20: #b7b7b7;
+  --color-gray-30: #9e9e9e;
+  --color-gray-40: #878787;
+
+  --color-gray-50: #727272;
+
+  --color-gray-60: #5e5e5e;
+  --color-gray-70: #4b4b4b;
+  --color-gray-80: #383838;
+  --color-gray-90: #232323;
+  --color-gray-100: #000000;
+
+  /*
   Light Theme
   */
-  --bg-color-lightest: Gainsboro;
-  --bg-color-light: Silver;
-  --bg-color-black: black;
-  --color-primary: black;
-  --color-primary-dim: gray;
-  --color-primary-invert: white;
-  --color-primary-highlight: red;
+
+  --color-text-primary: var(--color-gray-80);
+  --color-text-secondary: var(--color-gray-50);
+  --color-text-accent: red;
+  --color-text-light: var(--color-gray-10);
+  --color-bg-lightest: var(--color-gray-0);
+  --color-bg-light: var(--color-gray-10);
+  --color-bg-darkest: var(--color-gray-90);
 }
 
 /*
 Dark Theme
 */
 .dark {
-  --bg-color-lightest: LightGray;
-  --bg-color-light: DarkGray;
-  --color-primary-dim: DarkGray;
+  --color-text-primary: var(--color-gray-20);
+  --color-text-secondary: var(--color-gray-50);
+  --color-bg-lightest: var(--color-gray-50);
+  --color-bg-light: var(--color-gray-80);
+  --color-bg-darkest: var(--color-gray-100);
 }

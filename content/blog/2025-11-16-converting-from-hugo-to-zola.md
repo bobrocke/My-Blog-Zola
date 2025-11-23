@@ -81,19 +81,19 @@ I also greatly simplified the styling for dark mode. The code to handle light an
   /*
   Light Theme (default)
   */
-  --bg-color-light: lightgray;
-  --bg-color-black: black;
+  --color-bg-light: lightgray;
+  --color-bg-darkest: black;
   --color-primary: black;
-  --color-primary-dim: gray;
-  --color-primary-invert: white;
-  --color-primary-highlight: red;
+  --color-text-secondary: gray;
+  --color-text-light: white;
+  --color-text-accent: red;
 
   /*
   Dark Theme
   */
   .dark {
-    --bg-color-light: gray;
-    --color-primary-dim: DarkGray;
+    --color-bg-light: gray;
+    --color-text-secondary: DarkGray;
   }
 ```
 

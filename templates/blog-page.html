@@ -15,27 +15,29 @@
     <div class="prose">
       {{ page.content | safe }}
     </div>
+
+    <div class="page-nav">
+      {% if page.lower %}
+        <div>
+          <a href="{{ page.lower.path }}"><i class="bi bi-caret-left-fill"></i>Next Newer Post</a>
+        </div>
+      {% else %}
+        <div class="inactive">
+          <i class="bi bi-caret-left-fill"></i>Next Newer Post
+        </div>
+      {% endif %}
+
+      {% if page.higher %}
+        <div>
+          <a href="{{ page.higher.path }}">Next Older Post<i class="bi bi-caret-right-fill"></i></a>
+        </div>
+      {% else %}
+        <div class="inactive">
+          Next Older Post<i class="bi bi-caret-right-fill"></i>
+        </div>
+      {% endif %}
+    </div>
   </div>
 
-  <div class="page-nav">
-    {% if page.lower %}
-      <div>
-        <a href="{{ page.lower.path }}"><i class="bi bi-caret-left-fill"></i>Next Newer Post</a>
-      </div>
-    {% else %}
-      <div class="inactive">
-        <i class="bi bi-caret-left-fill"></i>Next Newer Post
-      </div>
-    {% endif %}
 
-    {% if page.higher %}
-      <div>
-        <a href="{{ page.higher.path }}">Next Older Post<i class="bi bi-caret-right-fill"></i></a>
-      </div>
-    {% else %}
-      <div class="inactive">
-        Next Older Post<i class="bi bi-caret-right-fill"></i>
-      </div>
-    {% endif %}
-  </div>
 {% endblock content %}

@@ -4,22 +4,101 @@ A block is a skeletal component or organisational structure.
 */
 
 /*
+Blog
+*/
+
+.blog-title a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.blog-title a:hover {
+  color: var(--color-text-accent);
+}
+
+.blog-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.blog-meta a {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+
+.blog-meta a:hover {
+  color: var(--color-text-accent);
+}
+
+.blog-meta.blog-dates {
+  margin-bottom: calc(var(--space-3xs) * -1);
+}
+
+.blog-meta.blog-taxonomies {
+  margin-top: calc(var(--space-3xs) * -1);
+  margin-bottom: var(--space-xs);
+}
+
+.prose a,
+p a {
+  text-decoration: underline dotted;
+  color: var(--color-primary);
+}
+
+.prose a:hover,
+p a:hover {
+  color: var(--color-text-accent);
+}
+
+.prose.post-summary {
+  margin-bottom: var(--space-l);
+}
+
+/*
+Footer
+*/
+
+footer {
+  background-color: var(--color-bg-darkest);
+  padding: var(--space-xs);
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--color-text-light);
+  margin-left: var(--space-xs);
+}
+
+footer a:hover {
+  color: var(--color-text-accent);
+}
+
+/*
 Navigation
 */
 
 nav {
   display: flex;
   align-items: center;
-  background-color: var(--bg-color-black);
+  background-color: var(--color-bg-darkest);
   padding: var(--space-xs);
-  color: var(--color-primary-invert);
+  color: var(--color-text-light);
   position: relative;
   margin-bottom: var(--space-xs);
 }
 
 nav a {
   text-decoration: none;
-  color: var(--color-primary-invert);
+  color: var(--color-text-light);
   font-family: var(--font-sans);
 }
 
@@ -28,23 +107,23 @@ nav li {
 }
 
 nav a:hover {
-  color: var(--color-primary-highlight);
+  color: var(--color-text-accent);
 }
 
 nav a.icon {
   margin-left: auto;
   font-size: var(--text-3xl);
-  color: var(--color-primary-invert);
+  color: var(--color-text-light);
 }
 
 button#theme-toggle {
-  color: var(--color-primary-invert);
-  background-color: var(--bg-color-black);
+  color: var(--color-text-light);
+  background-color: var(--color-bg-darkest);
   border-style: none;
 }
 
 button#theme-toggle:hover {
-  color: var(--color-primary-highlight);
+  color: var(--color-text-accent);
 }
 
 nav .vert-logo {
@@ -61,7 +140,7 @@ nav .nav-list {
   top: 100%;
   width: 100%;
   left: 0;
-  background-color: var(--bg-color-black);
+  background-color: var(--color-bg-darkest);
 }
 
 nav .nav-list ul {
@@ -113,6 +192,27 @@ nav .copyright {
 }
 
 /*
+Page Navigation
+*/
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-s);
+}
+
+.page-nav a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.page-nav a:hover {
+  color: var(--color-text-accent);
+}
+
+/*
 Pagination
 */
 
@@ -136,7 +236,7 @@ Pagination
 }
 
 .pagination ul a:hover {
-  color: var(--color-primary-highlight);
+  color: var(--color-text-accent);
 }
 
 .pagination .location {
@@ -168,78 +268,5 @@ Taxonomy
 }
 
 .taxonomy a:hover {
-  color: var(--color-primary-highlight);
-}
-
-/*
-Blog
-*/
-
-.blog-title a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-.blog-title a:hover {
-  color: var(--color-primary-highlight);
-}
-
-.blog-meta {
-  font-family: var(--font-sans);
-  font-size: var(--text-sm);
-  color: var(--color-primary-dim);
-}
-
-.blog-meta a {
-  text-decoration: none;
-  color: var(--color-primary-dim);
-}
-
-.blog-meta a:hover {
-  color: var(--color-primary-highlight);
-}
-
-.blog-meta.blog-dates {
-  margin-bottom: calc(var(--space-3xs) * -1);
-}
-
-.blog-meta.blog-taxonomies {
-  margin-top: calc(var(--space-3xs) * -1);
-  margin-bottom: var(--space-xs);
-}
-
-.prose a,
-p a {
-  text-decoration: underline dotted;
-  color: var(--color-primary);
-}
-
-.prose a:hover,
-p a:hover {
-  color: var(--color-primary-highlight);
-}
-
-.prose.post-summary {
-  margin-bottom: var(--space-l);
-}
-
-/*
-Previous/Next Navigation
-*/
-
-.page-nav {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-sans);
-  font-size: var(--text-sm);
-  margin-bottom: var(--space-s);
-}
-
-.page-nav a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-.page-nav a:hover {
-  color: var(--color-primary-highlight);
+  color: var(--color-text-accent);
 }

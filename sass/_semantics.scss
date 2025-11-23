@@ -6,13 +6,14 @@ Semantic Styles for HTML
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: bold;
-  background-color: var(--bg-color-lightest);
-  padding: 0px 4px;
+  background-color: var(--color-bg-lightest);
+  padding: calc(var(--space-3xs) / 2) var(--space-3xs);
   border-radius: 5px;
 }
 
 body {
-  background-color: var(--bg-color-light);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-light);
 }
 
 dd {
@@ -35,30 +36,6 @@ figcaption {
   font-family: var(--font-sans);
 }
 
-footer {
-  display: flex;
-  background-color: var(--bg-color-black);
-  padding: var(--space-xs);
-  color: var(--color-primary-invert);
-  font-family: var(--font-sans);
-  font-size: var(--text-xs);
-}
-
-footer ul {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0;
-}
-
-footer a {
-  color: var(--color-primary-invert);
-  margin-left: var(--space-xs);
-}
-
-footer a:hover {
-  color: var(--color-primary-highlight);
-}
-
 h1,
 h2,
 h3,
@@ -66,7 +43,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-sans);
-  color: var(--color-primary);
 }
 
 h1 {
