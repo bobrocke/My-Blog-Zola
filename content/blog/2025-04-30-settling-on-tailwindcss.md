@@ -7,7 +7,7 @@ description:
 draft: false
 taxonomies:
   categories: [Web Development]
-  tags: [CSS]
+  tags: [CSS, Tailwind]
 ---
 
 While experimenting with various [static site generators](@/blog/2025-03-14-moving-from-wordpress.md), I've also been learning about [Bulma](https://bulma.io/) (a traditional CSS framework) and [TailwindCSS](https://tailwindcss.com/) (a utility-based CSS framework). They come at the idea of a CSS framework from two very different directions, and if you've seen the Internet discussions, you'll know that opinions are decidedly mixed.
