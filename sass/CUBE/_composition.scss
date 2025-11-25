@@ -15,14 +15,14 @@ footer {
   body {
     display: grid;
     max-width: 992px;
-    margin: var(--space-m) auto;
-    grid-template-columns: 200px 1fr;
+    margin: var(--space-m);
+    /* grid-template-columns: 200px 1fr; */
+    grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
   }
 
   .content {
     grid-column: 2 / 2;
-    margin-left: var(--space-m);
-    margin-right: var(--space-m);
+    margin: 0 var(--space-m);
   }
 
   .pagination {
