@@ -11,7 +11,7 @@ footer {
   display: flex;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   body {
     display: grid;
     max-width: 992px;
@@ -22,6 +22,7 @@ footer {
   .content {
     grid-column: 2 / 2;
     margin-left: var(--space-m);
+    margin-right: var(--space-m);
   }
 
   .pagination {

@@ -40,6 +40,10 @@ Blog
   margin-bottom: var(--space-xs);
 }
 
+.button-nav {
+  border: 2px solid red;
+}
+
 .prose a,
 p a {
   text-decoration: underline dotted;
