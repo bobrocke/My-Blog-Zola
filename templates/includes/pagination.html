@@ -1,6 +1,6 @@
 {% if paginator.number_pagers > 1 %}
   <div class="pagination">
-    <ul>
+    <ul class="button-nav">
       <li>
         {% if paginator.current_index != 1 %}
           <a href="{{ paginator.first }}" aria-label="First Page" role="button" title="First Page"><i class="bi bi-rewind-fill"></i></a>
@@ -10,14 +10,14 @@
       </li>
       <li>
         {% if paginator.previous %}
-          <a href="{{ paginator.previous }}" aria-label="Previous Page" role="button" title="Previous Page"><i class="bi bi-caret-left-fill"></i></a>
+          <a href="{{ paginator.previous }}" aria-label="Previous Page" role="button" title="Previous Page" ><i class="bi bi-caret-left-fill"></i></a>
         {% else %}
-          <span><i class="bi bi-caret-left-fill inactive"></i></span>
+          <span ><i class="bi bi-caret-left-fill inactive"></i></span>
         {% endif %}
       </li>
-
-      <span class="location">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
-
+      <li>
+        <span class="location">Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+      </li>
       <li>
         {% if paginator.next %}
           <a href="{{ paginator.next }}" aria-label="Next Page" role="button" title="Next Page"><i class="bi bi-caret-right-fill"></i></a>
