@@ -16,7 +16,6 @@ footer {
     display: grid;
     max-width: 992px;
     margin: var(--space-m);
-    /* grid-template-columns: 200px 1fr; */
     grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
   }
 
