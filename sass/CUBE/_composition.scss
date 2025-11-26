@@ -14,8 +14,7 @@ footer {
 @media (min-width: 600px) {
   body {
     display: grid;
-    max-width: 992px;
-    margin: var(--space-m);
+    max-width: 1000px;
     grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
   }
 
@@ -26,8 +25,6 @@ footer {
 
   .pagination {
     grid-column: 2 / 2;
-    text-align: center;
-    margin-top: var(--space-m);
   }
 
   footer {

@@ -11,27 +11,33 @@ Semantic Styles for HTML
   border-radius: 5px;
 }
 
+a {
+  color: var(--color-text-primary);
+
+  &:hover {
+    color: var(--color-text-accent);
+  }
+}
+
 body {
   color: var(--color-text-primary);
   background-color: var(--color-bg-light);
+  font-family: var(--font-serif);
+  font-size: var(--text-m);
 }
 
 dd {
-  font-family: var(--font-serif);
-  font-size: var(--text-m);
   margin-left: var(--space-s);
   margin-bottom: var(--space-xs);
 }
 
 dt {
-  font-family: var(--font-serif);
-  font-size: var(--text-m);
   font-weight: bold;
 }
 
 figcaption {
   text-align: center !important;
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   margin-top: 0 !important;
   font-family: var(--font-sans);
 }
@@ -58,21 +64,12 @@ h3 {
 }
 
 p {
-  font-family: var(--font-serif);
-  font-size: var(--text-m);
-}
-
-p {
   margin-bottom: var(--space-xs);
 }
 
 p + ul {
   margin-top: calc(var(--space-xs) * -1);
 }
-
-/* p:not(:last-of-type):not(+ ul) {
-  margin-bottom: var(--space-xs);
-} */
 
 pre {
   font-family: var(--font-mono);
@@ -83,7 +80,5 @@ pre {
 }
 
 ul {
-  font-family: var(--font-serif);
-  font-size: var(--text-m);
   margin-bottom: var(--space-xs);
 }
