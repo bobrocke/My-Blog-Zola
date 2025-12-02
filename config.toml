@@ -3,9 +3,11 @@ base_url = "https://bobrockefeller.com"
 title = "Bob Rockefeller"
 description = "What is Bob up to now?"
 
-compile_sass = true
+compile_sass = false
 
 build_search_index = false
+
+output_dir = "_site"
 
 taxonomies = [
   {name = "tags", paginate_by = 4},

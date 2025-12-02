@@ -1,4 +1,51 @@
 /*
+Composition from CUBE CSS
+Layout rules
+*/
+
+body {
+  margin: var(--space-m);
+}
+
+footer {
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
+  }
+
+  .content {
+    grid-column: 2 / 2;
+    margin: 0 var(--space-m);
+  }
+
+  .pagination {
+    grid-column: 2 / 2;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/*
+Utilities from CUBE CSS
+CSS classes that do one job and do that one job well.
+*/
+
+.inactive {
+  color: var(--color-text-secondary);
+}
+
+.hidden {
+  display: none;
+}
+
+/*
 Blocks from CUBE CSS
 A block is a skeletal component or organisational structure.
 */
@@ -281,4 +328,13 @@ Taxonomy
 
 .taxonomy a:hover {
   color: var(--color-text-accent);
+}
+
+/*
+Exceptions from CUBE CSS
+Layout rules
+*/
+
+h1.heading {
+  margin-bottom: var(--space-s);
 }

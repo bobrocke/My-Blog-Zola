@@ -1,6 +1,7 @@
 zola_notes.md
 .zed
-public
+.vscode
+_site
 
 sass/_bootstrap-icons OG.scss
 sass/_brands OG.scss
