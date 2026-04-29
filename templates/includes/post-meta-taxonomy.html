@@ -2,7 +2,12 @@
   {% if page.taxonomies.categories %}
     <i class="bi bi-folder"></i>&nbsp;
     {% for category in page.taxonomies.categories %}
-      <a href="{{ get_taxonomy_url(kind = 'categories', name = category) }}">{{ category }}</a>
+      {% set categorySlug = (category | slugify) %}
+      {% if categorySlug in current_url %}
+        {{ category }}
+      {% else %}
+        <a href="{{ get_taxonomy_url(kind = 'categories', name = category) }}">{{ category }}</a>
+      {% endif %}
       {% if not loop.last %}
         &#x2022;
       {% endif %}
@@ -13,7 +18,12 @@
   {% if page.taxonomies.tags %}
     <i class="bi bi-tag"></i>&nbsp;
     {% for tag in page.taxonomies.tags %}
-      <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}">{{ tag }}</a>
+      {% set tagSlug = (tag | slugify ) %}
+      {% if tagSlug in current_url %}
+        {{ tag }}
+      {% else %}
+        <a href="{{ get_taxonomy_url(kind = 'tags', name = tag) }}">{{ tag }}</a>
+      {% endif %}
       {% if not loop.last %}
         &#x2022;
       {% endif %}
