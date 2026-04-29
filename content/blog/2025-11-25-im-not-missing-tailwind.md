@@ -1,6 +1,7 @@
 ---
 title: I'm Not Missing Tailwind
 date: 2025-11-25
+slug: 2025-11-25-im-not-missing-tailwind
 taxonomies:
   categories: [Web Development]
   tags: [CSS, Tailwind]
@@ -17,7 +18,13 @@ For one thing, styling with Tailwind classes can get pretty verbose:
 
 ```html
 <li>
-  <a aria-current="page" aria-label="Page {{ $k }}" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-600" role="button">{{ $k }}</a>
+  <a
+    aria-current="page"
+    aria-label="Page {{ $k }}"
+    class="flex items-center justify-center px-4 h-10 leading-tight text-gray-400 bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-600"
+    role="button"
+    >{{ $k }}</a
+  >
 </li>
 ```
 
@@ -27,7 +34,7 @@ Tailwind has the `@apply` directive to address this. You create a class of your 
 
 ```css
 .your-class {
-@apply w-30 flex items-center justify-center px-4 h-10 leading-tight text-primary bg-lightest border border-gray-300 hover:bg-primary-highlight dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-red-600;
+  @apply w-30 flex items-center justify-center px-4 h-10 leading-tight text-primary bg-lightest border border-gray-300 hover:bg-primary-highlight dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-red-600;
 }
 ```
 
