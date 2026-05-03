@@ -1,0 +1,6 @@
+[build]
+  command = "zola build"
+  publish = "_site"
+
+[build.environment]
+  ZOLA_VERSION = "0.22.1"
