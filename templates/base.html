@@ -1,25 +1,22 @@
 {% import "macros/macros.html" as macros %}
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="What's Bob up to now?">
-    <meta name="generator" content="Zola">
+    <meta name="description" content="What's Bob up to now?" />
+    <meta name="generator" content="Zola" />
 
-    <meta property="og:url" content="https://bobrockefeller.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Bob Rockefeller">
-    <meta property="og:description" content="What's Bob up to now?">
-    <meta property="og:site_name" content="Bob Rockefeller">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:author" content="Bob Rockefeller">
+    <meta property="og:url" content="https://bobrockefeller.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bob Rockefeller" />
+    <meta property="og:description" content="What's Bob up to now?" />
+    <meta property="og:site_name" content="Bob Rockefeller" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="Bob Rockefeller" />
 
-
-    <title>
-      {% block title %}{% endblock title %}
-    </title>
+    <title>{% block title %}{% endblock title %}</title>
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,50 +25,89 @@
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
 
-    <link rel="stylesheet" href="/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/brands.css">
-    <link rel="stylesheet" href="/css/lightbox.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/CUBE.css">
-    <link rel="stylesheet" href="/css/semantics.css">
+    <link rel="preload" as="style" href="/main.css" />
+    <link rel="stylesheet" href="/main.css" />
 
     <script>
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     </script>
   </head>
 
   <body>
-    {% include "includes/navigation.html" %}
-
-    {% block content %}{% endblock content %}
-
-    {% include "includes/footer.html" %}
+    {% include "includes/navigation.html" %} {% block content %}{% endblock
+    content %} {% include "includes/footer.html" %}
   </body>
 
   {% if get_env(name="env", default="dev") == "prod" %}
-    <!-- Start of Woopra Code -->
-    <script>
-      !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
+  <!-- Start of Woopra Code -->
+  <script>
+    !(function () {
+      var t,
+        o,
+        c,
+        e = window,
+        n = document,
+        r = arguments,
+        a = "script",
+        i = [
+          "call",
+          "cancelAction",
+          "config",
+          "identify",
+          "push",
+          "track",
+          "trackClick",
+          "trackForm",
+          "update",
+          "visit",
+        ],
+        s = function () {
+          var t,
+            o = this,
+            c = function (t) {
+              o[t] = function () {
+                return (
+                  o._e.push(
+                    [t].concat(Array.prototype.slice.call(arguments, 0)),
+                  ),
+                  o
+                );
+              };
+            };
+          for (o._e = [], t = 0; t < i.length; t++) c(i[t]);
+        };
+      for (e.__woo = e.__woo || {}, t = 0; t < r.length; t++)
+        e.__woo[r[t]] = e[r[t]] = e[r[t]] || new s();
+      (((o = n.createElement(a)).async = 1),
+        (o.src = "https://static.woopra.com/js/w.js"),
+        (c = n.getElementsByTagName(a)[0]).parentNode.insertBefore(o, c));
+    })("woopra");
 
-      woopra.config({
-        domain: "bobrockefeller.com",
-        outgoing_tracking: true,
-        download_tracking: true,
-        click_tracking: true
-      });
+    woopra.config({
+      domain: "bobrockefeller.com",
+      outgoing_tracking: true,
+      download_tracking: true,
+      click_tracking: true,
+    });
 
-      woopra.track();
-    </script>
-    <!-- End of Woopra Code -->
+    woopra.track();
+  </script>
+  <!-- End of Woopra Code -->
   {% endif %}
 
   <script src="/js/main.js"></script>
