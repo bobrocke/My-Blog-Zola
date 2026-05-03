@@ -1,6 +1,7 @@
 ---
 title: Learning About Eleventy
 date: 2025-12-19
+slug: 2025-12-19-learning-about-eleventy
 lastmod:
 taxonomies:
   categories: ["Web Development"]

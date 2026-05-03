@@ -1,6 +1,7 @@
 ---
 title: I Changed Themes
 date: 2025-02-07 10:09:00
+slug: 2025-02-07-i-changed-themes
 summary: A simple (I thought) desire to add a Stack Overflow icon, and link to my account there, in this blog's footer sent me looking for a different, but still uncomplicated theme. Soon, I was off in the weeks. And I said I wouldn't...
 image:
 taxonomies:

@@ -1,6 +1,7 @@
 ---
 title: Converting from Hugo to Zola
 date: 2025-11-16
+slug: 2025-11-16-converting-from-hugo-to-zola
 taxonomies:
   categories: [Web Development]
   tags: [Zola]

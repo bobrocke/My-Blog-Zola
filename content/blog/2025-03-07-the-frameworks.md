@@ -1,6 +1,7 @@
 ---
 title: The Frameworks
 date: 2025-03-07 18:53:00
+slug: 2025-03-07-the-frameworks
 taxonomies:
   categories: [Web Development]
   tags:

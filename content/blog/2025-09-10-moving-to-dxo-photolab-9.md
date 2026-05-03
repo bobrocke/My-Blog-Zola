@@ -1,6 +1,7 @@
 ---
 title: Moving to DxO PhotoLab 9
 date: 2025-09-10
+slug: 2025-09-10-moving-to-dxo-photolab-9
 updated: 2025-09-26
 summary:
 description:

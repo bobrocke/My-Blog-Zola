@@ -1,6 +1,7 @@
 ---
 title: Alien Ammo
 date: 2024-06-05 13:20:41
+slug: 2024-06-05-alien-ammo
 publish: true
 pin: false
 summary: Perhaps the most important thing to control for reliable operation of the Alien pistol is the ammunition used. Because of the gas system that delays blowback, the wrong ammo will lead to unnecessary buildup and finally, failure to cycle the slide.

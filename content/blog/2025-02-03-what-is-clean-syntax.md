@@ -1,6 +1,7 @@
 ---
 title: What is Clean Syntax?
 date: 2025-02-03 21:20:00
+slug: 2025-02-03-what-is-clean-syntax
 summary: Programmers talk about *clean syntax* and say this or that language or framework has such a property. I've noted that Ruby and Ruby on Rails have this thing, too. So what is it?
 image:
 taxonomies:
