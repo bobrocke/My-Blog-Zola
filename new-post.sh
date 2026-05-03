@@ -26,6 +26,7 @@ cat > "$FILE_PATH" << EOF
 ---
 title: $POST_TITLE
 date: $DATE
+updated:
 taxonomies:
   categories: []
   tags: []
