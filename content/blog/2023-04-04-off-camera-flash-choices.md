@@ -1,6 +1,5 @@
 ---
 title: Off-Camera Flash Choices
-summary: My off-camera flash 'system' has been a mishmash of equipment. Clearly, I didn’t have much of a ‘system’ and it certainly wasn’t very modern. It was time for something better.
 date: 2023-04-04 21:55:27
 slug: 2023-04-04-off-camera-flash-choices
 publish: true

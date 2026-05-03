@@ -3,7 +3,6 @@ title: Settling on TailwindCSS
 date: 2025-04-30
 slug: 2025-04-30-settling-on-tailwindcss
 updated: 2025-05-10
-summary:
 description:
 draft: false
 taxonomies:

@@ -3,7 +3,6 @@ title: Hugo is Good
 date: 2025-04-05
 slug: 2025-04-05-hugo-is-good
 lastmod:
-summary: This site is now running on Hugo, a popular Static Site Generator (SSG). I tried [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [Astro](https://astro.build/), and [Eleventy/11ty](https://www.11ty.dev/) on the way here, but settled on Hugo. It's good!
 description:
 draft: false
 taxonomies:

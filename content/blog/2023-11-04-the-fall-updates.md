@@ -1,6 +1,5 @@
 ---
 title: "The Fall Updates"
-summary: Capture One, Lightroom Classic, PhotoLab Elite, and Photo Raw have all been updated this Fall. The question for me is whether or not these changes make switching from Lightroom Classic a good choice.
 date: 2023-11-04 15:35:26
 slug: 2023-11-04-the-fall-updates
 publish: true

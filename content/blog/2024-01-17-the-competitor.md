@@ -2,7 +2,6 @@
 title: The Competitor
 date: 2024-01-17 18:56:55
 slug: 2024-01-17-the-competitor
-summary: The M&P Competitor, that is. After IPSC Nationals in November of 2023, I got started practicing and shooting matches with the M&P Competitor. That has worked out pretty well.
 publish: true
 pin: false
 taxonomies:

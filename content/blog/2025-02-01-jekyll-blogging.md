@@ -1,6 +1,5 @@
 ---
 title: Jekyll Blogging
-summary: I've set this blog site up to be **dead simple**. I don't want to do anything to create it beyond installing Jekyll and setting it up to publish to GitHub Pages.
 date: 2025-02-01 17:13:00
 slug: 2025-02-01-jekyll-blogging
 taxonomies:
