@@ -4,27 +4,43 @@ Layout rules
 */
 
 body {
-  margin: var(--space-m);
+  margin: 0;
+  background-color: var(--color-bg-page);
 }
 
 footer {
   display: flex;
 }
 
+/* Mobile: content fills the screen with white bg and padding */
+.content {
+  background-color: var(--color-bg-light);
+  padding: var(--space-m);
+}
+
 @media (min-width: 600px) {
   body {
     display: grid;
     max-width: 1000px;
+    margin-inline: auto;
     grid-template-columns: clamp(4rem, 20vw, 200px) 1fr;
+    min-height: 100vh;
   }
 
+  /* Content becomes a floating card on desktop */
   .content {
     grid-column: 2 / 2;
-    margin: 0 var(--space-m);
+    margin: var(--space-m);
+    padding: var(--space-m) var(--space-l);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    align-self: start;
   }
 
+  /* Pagination that lives outside .content (e.g. tags/single) */
   .pagination {
     grid-column: 2 / 2;
+    margin: 0 var(--space-m) var(--space-m);
   }
 
   footer {
@@ -37,6 +53,7 @@ Utilities from CUBE CSS
 CSS classes that do one job and do that one job well.
 */
 
+/* Default: de-emphasised / disabled */
 .inactive {
   color: var(--color-text-secondary);
 }
@@ -45,10 +62,41 @@ CSS classes that do one job and do that one job well.
   display: none;
 }
 
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /*
 Blocks from CUBE CSS
 A block is a skeletal component or organisational structure.
 */
+
+/*
+Post Entry — shared block for all blog post listings
+*/
+
+.post-entry {
+  padding-block: var(--space-m);
+  border-bottom: 1px solid var(--color-border);
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
 
 /*
 Blog
@@ -56,6 +104,7 @@ Blog
 
 .blog-title a {
   text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 .blog-meta {
@@ -66,50 +115,70 @@ Blog
   a {
     text-decoration: none;
     color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--color-text-accent);
+    }
   }
 
   &.blog-dates {
-    margin-bottom: calc(var(--space-3xs) * -1);
+    margin-bottom: var(--space-3xs);
   }
 
   &.blog-taxonomies {
-    margin-top: calc(var(--space-3xs) * -1);
-    margin-bottom: var(--space-xs);
+    margin-top: 0;
+    margin-bottom: var(--space-s);
   }
 }
 
 ul.button-nav {
+  display: flex;
   padding: 0;
   margin-bottom: 0;
+  list-style: none;
 
   & > li {
-    float: left;
-    border: 2px solid var(--color-text-secondary);
+    border: 1px solid var(--color-border);
     padding: var(--space-3xs) var(--space-xs);
+    transition: background-color var(--transition-fast);
   }
 
   & > li + li {
-    margin-left: -2px;
+    margin-left: -1px;
   }
 
   & > li:first-child {
-    border-top-left-radius: var(--space-2xs);
-    border-bottom-left-radius: var(--space-2xs);
+    border-top-left-radius: var(--radius-md);
+    border-bottom-left-radius: var(--radius-md);
   }
 
   & > li:last-child {
-    border-top-right-radius: var(--space-2xs);
-    border-bottom-right-radius: var(--space-2xs);
+    border-top-right-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+  }
+
+  & > li:not(:has(.inactive)):hover {
+    background-color: var(--color-bg-lightest);
   }
 }
 
 .prose a,
 p a {
-  text-decoration: underline dotted;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 3px;
+  transition:
+    color var(--transition-fast),
+    text-decoration-color var(--transition-fast);
+
+  &:hover {
+    text-decoration-color: var(--color-text-accent);
+  }
 }
 
 .prose.post-summary {
-  margin-bottom: var(--space-l);
+  margin-bottom: 0;
 }
 
 /*
@@ -118,21 +187,31 @@ Footer
 
 footer {
   background-color: var(--color-bg-darkest);
-  padding: var(--space-xs);
-  margin-top: var(--space-m);
+  padding: var(--space-s) var(--space-m);
   color: var(--color-text-light);
   font-family: var(--font-sans);
   font-size: var(--text-xs);
+  align-items: center;
+  gap: var(--space-s);
 
   ul {
     display: flex;
     list-style: none;
     margin-bottom: 0;
+    gap: var(--space-s);
   }
 
   a {
     color: var(--color-text-light);
-    margin-left: var(--space-xs);
+    font-size: var(--text-m);
+    margin-left: 0;
+    opacity: 0.6;
+    transition: opacity var(--transition-fast);
+
+    &:hover {
+      opacity: 1;
+      color: var(--color-text-light);
+    }
   }
 }
 
@@ -144,7 +223,7 @@ nav {
   display: flex;
   align-items: center;
   background-color: var(--color-bg-darkest);
-  padding: var(--space-xs);
+  padding: var(--space-xs) var(--space-m);
   color: var(--color-text-light);
   position: relative;
   margin-bottom: var(--space-xs);
@@ -154,26 +233,54 @@ nav a {
   text-decoration: none;
   color: var(--color-text-light);
   font-family: var(--font-sans);
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-accent-dark);
+  }
 }
 
 nav li {
   font-family: var(--font-sans);
 }
 
-nav a.icon {
+/* Hamburger icon button */
+nav button.icon {
   margin-left: auto;
   font-size: var(--text-3xl);
   color: var(--color-text-light);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-3xs);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-accent-dark);
+  }
 }
 
 button#theme-toggle {
   color: var(--color-text-light);
-  background-color: var(--color-bg-darkest);
-  border-style: none;
-}
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-3xs);
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  /* inline-flex so text-align:center on the parent ul actually centers it */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
 
-button#theme-toggle:hover {
-  color: var(--color-text-accent);
+  &:hover {
+    color: var(--color-accent-dark);
+  }
 }
 
 nav {
@@ -186,59 +293,152 @@ nav {
   }
 
   .nav-list {
-    display: none;
     position: absolute;
     top: 100%;
     width: 100%;
     left: 0;
     background-color: var(--color-bg-darkest);
+    box-shadow: var(--shadow-md);
+    z-index: 10;
+  }
+
+  /* JS toggles the [hidden] attribute; this restores display when shown */
+  .nav-list:not([hidden]) {
+    display: block;
   }
 
   .nav-list ul {
     list-style: none;
-    padding-left: var(--space-m);
+    padding: var(--space-xs) var(--space-m) var(--space-s);
   }
 
   .copyright {
     margin-top: var(--space-m);
     font-size: var(--text-xs);
+    color: var(--color-gray-50);
+    line-height: 1.7;
   }
 }
 
 @media (min-width: 600px) {
   nav {
-    display: block;
+    /* Sidebar column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
     margin-bottom: 0;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    max-height: 100vh;
+    overflow-y: auto;
 
     .vert-logo {
       display: block;
+      padding: var(--space-m) var(--space-s);
     }
 
     .horiz-logo {
       display: none;
     }
 
-    a.icon {
+    /* Hide the hamburger button */
+    button.icon {
       display: none;
     }
 
     .nav-list {
       display: block;
       position: static;
+      box-shadow: none;
+      flex: 1;
+    }
+
+    /* Override [hidden] so the nav always shows on desktop */
+    .nav-list[hidden] {
+      display: block;
     }
 
     .nav-list ul {
       text-align: center;
-      padding: 0;
-      margin-top: var(--space-xs);
+      padding: var(--space-xs) var(--space-xs) 0;
+      margin-top: var(--space-2xs);
     }
 
     .nav-list li {
-      padding: var(--space-3xs);
+      padding: var(--space-3xs) var(--space-2xs);
+    }
+
+    /* Regular nav links — subtle hover bg */
+    .nav-list li a {
+      font-size: var(--text-lg);
+      display: block;
+      border-radius: var(--radius-md);
+      padding: var(--space-3xs) var(--space-xs);
+      transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+        color: var(--color-text-light);
+      }
+    }
+
+    /* Explicitly center the theme-toggle button (inline-flex respects text-align) */
+    .nav-list li.button {
+      text-align: center;
+    }
+
+    /*
+    Exception: nav .inactive = current page.
+    Overrides the utility's "de-emphasised" default with an accent highlight.
+    */
+    .nav-list li.inactive {
+      color: var(--color-accent-dark);
+      font-size: var(--text-lg);
+      font-weight: 700;
+      border-radius: var(--radius-md);
+      padding: var(--space-3xs) var(--space-xs);
     }
 
     .links {
       display: block;
+      padding: var(--space-s) var(--space-xs);
+      text-align: center;
+      margin-top: auto;
+    }
+
+    /* Vertical stack — no overflow risk in the narrow sidebar */
+    .links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      gap: var(--space-3xs);
+      margin-bottom: var(--space-xs);
+    }
+
+    .links ul li a {
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+      opacity: 0.55;
+      transition: opacity var(--transition-fast);
+
+      &:hover {
+        opacity: 1;
+        color: var(--color-text-light);
+      }
+    }
+
+    .copyright {
+      font-size: var(--text-xs);
+      color: var(--color-gray-50);
+      line-height: 1.7;
+      padding-top: var(--space-2xs);
     }
   }
 }
@@ -252,29 +452,41 @@ Page Navigation
   justify-content: space-between;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
+  margin-top: var(--space-l);
+  gap: var(--space-s);
 
   a {
     text-decoration: none;
     color: var(--color-primary);
-  }
+    transition: color var(--transition-fast);
 
-  a:hover {
-    color: var(--color-text-accent);
+    &:hover {
+      color: var(--color-accent-hover);
+    }
   }
 
   & > div {
-    border: 2px solid var(--color-text-secondary);
-    padding: var(--space-3xs) var(--space-xs);
+    border: 1px solid var(--color-border);
+    padding: var(--space-xs) var(--space-s);
+    border-radius: var(--radius-md);
+    transition:
+      border-color var(--transition-fast),
+      background-color var(--transition-fast);
+    flex: 1;
+    text-align: center;
+  }
+
+  & > div:not(.inactive):hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-bg-lightest);
   }
 
   & > div:first-child {
-    border-top-left-radius: var(--space-2xs);
-    border-bottom-left-radius: var(--space-2xs);
+    text-align: left;
   }
 
   & > div:last-child {
-    border-top-right-radius: var(--space-2xs);
-    border-bottom-right-radius: var(--space-2xs);
+    text-align: right;
   }
 }
 
@@ -299,15 +511,17 @@ Pagination
   ul a {
     text-decoration: none;
     color: var(--color-primary);
-  }
+    transition: color var(--transition-fast);
 
-  ul a:hover {
-    color: var(--color-text-accent);
+    &:hover {
+      color: var(--color-accent-hover);
+    }
   }
 
   .location {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
+    color: var(--color-text-secondary);
   }
 }
 
@@ -319,22 +533,34 @@ Taxonomy
   list-style: none;
   font-family: var(--font-sans);
   font-size: var(--text-lg);
+  padding: 0;
+}
+
+.taxonomy li {
+  padding-block: var(--space-2xs);
+  border-bottom: 1px solid var(--color-border);
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .taxonomy a {
   text-decoration: none;
   color: var(--color-primary);
-}
+  transition: color var(--transition-fast);
 
-.taxonomy a:hover {
-  color: var(--color-text-accent);
+  &:hover {
+    color: var(--color-accent-hover);
+  }
 }
 
 /*
 Exceptions from CUBE CSS
-Layout rules
 */
 
 h1.heading {
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-border);
 }

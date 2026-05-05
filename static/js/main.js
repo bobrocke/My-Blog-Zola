@@ -1,10 +1,14 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function togglelinks() {
-  var x = document.getElementById("menu");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+/* Toggle navigation menu — works with the [hidden] attribute and aria-expanded */
+function togglelinks(btn) {
+  var menu = document.getElementById("menu");
+  var isHidden = menu.hasAttribute("hidden");
+
+  if (isHidden) {
+    menu.removeAttribute("hidden");
+    btn.setAttribute("aria-expanded", "true");
   } else {
-    x.style.display = "block";
+    menu.setAttribute("hidden", "");
+    btn.setAttribute("aria-expanded", "false");
   }
 }
 

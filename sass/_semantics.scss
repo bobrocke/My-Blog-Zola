@@ -2,17 +2,26 @@
 Semantic Styles for HTML
 */
 
+*:focus-visible {
+  outline: 2px solid var(--color-text-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
 :not(pre) > code {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: bold;
   background-color: var(--color-bg-lightest);
+  color: var(--color-text-primary);
   padding: calc(var(--space-3xs) / 2) var(--space-3xs);
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
 }
 
 a {
   color: var(--color-text-primary);
+  transition: color var(--transition-fast);
 
   &:hover {
     color: var(--color-text-accent);
@@ -21,7 +30,7 @@ a {
 
 body {
   color: var(--color-text-primary);
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-page);
   font-family: var(--font-serif);
   font-size: var(--text-m);
 }
@@ -40,6 +49,7 @@ figcaption {
   font-size: var(--text-sm);
   margin-top: 0 !important;
   font-family: var(--font-sans);
+  color: var(--color-text-secondary);
 }
 
 h1,
@@ -49,6 +59,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 h1 {
@@ -75,8 +87,11 @@ pre {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   text-wrap: wrap;
-  margin-bottom: var(--space-xs);
-  padding: var(--space-xs);
+  margin-bottom: var(--space-s);
+  padding: var(--space-s);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
 }
 
 ul {

@@ -1,57 +1,112 @@
- <nav>
+<nav>
   <!-- Site logo -->
   <div class="horiz-logo">
-    <img src="/images/logo-horiz.svg" alt="Logo" height="50" width="160" />
+    <img
+      src="/images/logo-horiz.svg"
+      alt="Bob Rockefeller"
+      height="50"
+      width="160"
+    />
   </div>
   <div class="vert-logo">
-    <img src="/images/logo-vert.svg" alt="Logo" width="180"/>
+    <img src="/images/logo-vert.svg" alt="Bob Rockefeller" width="180" />
   </div>
 
-  <!-- Hamburger menu  -->
-  <a href="javascript:void(0);" class="icon" onclick="togglelinks()">
-    <i class="bi bi-list"></i>
-  </a>
+  <!-- Hamburger menu button -->
+  <button
+    class="icon"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="menu"
+    onclick="togglelinks(this)"
+  >
+    <i class="bi bi-list" aria-hidden="true"></i>
+  </button>
 
-  <div class="nav-list" id="menu">
+  <div class="nav-list" id="menu" hidden>
     <ul>
-      {% for menu in config.extra.menus %}
-        {% if current_path == menu.url %}
-          <li class="inactive">{{ menu.name }}</li>
-        {% else %}
-          <li><a href="{{menu.url}}">{{menu.name}}</a></li>
-        {% endif %}
-      {% endfor %}
+      {% for menu in config.extra.menus %} {% if current_path == menu.url %}
+      <li class="inactive">{{ menu.name }}</li>
+      {% else %}
+      <li><a href="{{menu.url}}">{{menu.name}}</a></li>
+      {% endif %} {% endfor %}
 
-      <li><a href="https://photos.bobrockefeller.com/" target="_blank">Photos</a></li>
+      <li>
+        <a href="https://photos.bobrockefeller.com/" target="_blank">Photos</a>
+      </li>
 
       <li class="button">
-        <button id="theme-toggle">
-          <i id="theme-toggle-dark-icon" title="Switch to Dark Mode" class="bi bi-moon-fill hidden"></i>
-          <i id="theme-toggle-light-icon" title="Switch to Light Mode" class="bi bi-sun-fill hidden"></i>
+        <button id="theme-toggle" aria-label="Toggle color theme">
+          <i
+            id="theme-toggle-dark-icon"
+            title="Switch to Dark Mode"
+            class="bi bi-moon-fill hidden"
+            aria-hidden="true"
+          ></i>
+          <i
+            id="theme-toggle-light-icon"
+            title="Switch to Light Mode"
+            class="bi bi-sun-fill hidden"
+            aria-hidden="true"
+          ></i>
         </button>
       </li>
     </ul>
-      <div class="links">
-        <ul>
-          <li>
-            <a href="https://github.com/bobrocke" title="Bob on GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/users/1938118/bob-rockefeller" title="Bob on Stack Overflow" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
-          </li>
-          <li>
-            <a href="https://www.flickr.com/photos/bobrocke/" title="Bob on Flickr" target="_blank"><i class="fa-brands fa-flickr"></i></a>
-          </li>
-          <li>
-            <a href="https://500px.com/p/BobRockefeller?view=photos" title="Bob on 500px" target="_blank"><i class="fa-brands fa-500px"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/bob.rockefeller" title="Bob on Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="copyright">
-            <span>&copy; {{ now() | date(format="%Y") }}<br> Bob Rockefeller. <br> All Rights Reserved.</span>
-          </li>
-        </ul>
+    <div class="links">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/bobrocke"
+            title="Bob on GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://stackoverflow.com/users/1938118/bob-rockefeller"
+            title="Bob on Stack Overflow"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-stack-overflow" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.flickr.com/photos/bobrocke/"
+            title="Bob on Flickr"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-flickr" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://500px.com/p/BobRockefeller?view=photos"
+            title="Bob on 500px"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-500px" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/bob.rockefeller"
+            title="Bob on Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span
+          >&copy; {{ now() | date(format="%Y") }}<br />
+          Bob Rockefeller.<br />
+          All Rights Reserved.</span
+        >
       </div>
-  <div>
+    </div>
+  </div>
 </nav>

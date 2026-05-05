@@ -12,9 +12,9 @@ Breakpoints
 
 /* Variables */
 :root {
-  --font-sans: "PT Sans", "sans-serif";
-  --font-serif: "PT Serif", "serif";
-  --font-mono: "Monaco", "monospace";
+  --font-sans: "PT Sans", system-ui, sans-serif;
+  --font-serif: "PT Serif", Georgia, serif;
+  --font-mono: "Monaco", "Menlo", "Consolas", monospace;
 
   /* https://utopia.fyi/type/calculator?c=390,12,1.2,992,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --text-xs: clamp(0.5208rem, 0.34rem + 0.742vw, 0.8rem);
@@ -59,34 +59,54 @@ Breakpoints
   --grid-columns: 6;
 
   /*
-  Grays (really neutrals)
+  Slate-based neutral palette — cool, modern undertone
   */
+  --color-gray-0: #f8fafc;
+  --color-gray-10: #f1f5f9;
+  --color-gray-20: #e2e8f0;
+  --color-gray-30: #cbd5e1;
+  --color-gray-40: #94a3b8;
+  --color-gray-50: #64748b;
+  --color-gray-60: #475569;
+  --color-gray-70: #334155;
+  --color-gray-80: #1e293b;
+  --color-gray-90: #0f172a;
+  --color-gray-100: #020617;
 
-  --color-gray-0: #f2f2f2;
-  --color-gray-10: #d3d3d3;
-  --color-gray-20: #b7b7b7;
-  --color-gray-30: #9e9e9e;
-  --color-gray-40: #878787;
-
-  --color-gray-50: #727272;
-
-  --color-gray-60: #5e5e5e;
-  --color-gray-70: #4b4b4b;
-  --color-gray-80: #383838;
-  --color-gray-90: #232323;
-  --color-gray-100: #000000;
+  /*
+  Accent — slate-blue, refined and professional
+  */
+  --color-accent: hsl(214, 62%, 50%);
+  --color-accent-hover: hsl(214, 62%, 38%);
+  --color-accent-dark: hsl(213, 90%, 68%);
 
   /*
   Light Theme
   */
-
   --color-text-primary: var(--color-gray-80);
   --color-text-secondary: var(--color-gray-50);
-  --color-text-accent: red;
+  --color-text-accent: var(--color-accent);
   --color-text-light: var(--color-gray-10);
+  --color-bg-page: var(--color-gray-10);
+  --color-bg-light: #ffffff;
   --color-bg-lightest: var(--color-gray-0);
-  --color-bg-light: var(--color-gray-10);
   --color-bg-darkest: var(--color-gray-90);
+  --color-border: var(--color-gray-20);
+  --color-primary: var(--color-accent);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* Border radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.875rem;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.07), 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 16px rgb(0 0 0 / 0.08), 0 2px 4px rgb(0 0 0 / 0.05);
 }
 
 /*
@@ -94,8 +114,16 @@ Dark Theme
 */
 .dark {
   --color-text-primary: var(--color-gray-20);
-  --color-text-secondary: var(--color-gray-50);
-  --color-bg-lightest: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-40);
+  --color-text-accent: var(--color-accent-dark);
+  --color-text-light: var(--color-gray-20);
+  --color-bg-page: var(--color-gray-90);
   --color-bg-light: var(--color-gray-80);
+  --color-bg-lightest: var(--color-gray-70);
   --color-bg-darkest: var(--color-gray-100);
+  --color-border: var(--color-gray-70);
+  --color-primary: var(--color-accent-dark);
+
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 16px rgb(0 0 0 / 0.5);
 }
