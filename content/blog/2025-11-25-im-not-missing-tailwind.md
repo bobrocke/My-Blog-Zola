@@ -28,7 +28,7 @@ For one thing, styling with Tailwind classes can get pretty verbose:
 </li>
 ```
 
-That makes it more difficult read through all that to understand just how an element is being styled. But worse than that, if those same styles are applied in various places around the site to style multiple instances of the same element, it's very hard to be sure all the instances are the same. When the elements are first created, copying and pasting the styles works fine. But if changes have to be made later, consistency becomes a real problem.
+It's more difficult to read through it all to understand how an element is being styled. But worse than that, if those same styles are applied in various places around the site to style multiple instances of the same element, it's very hard to be sure all the instances are the same. When the elements are first created, copying and pasting the styles works fine. But if changes have to be made later, consistency becomes a real problem.
 
 Tailwind has the `@apply` directive to address this. You create a class of your choice and define it like this:
 
