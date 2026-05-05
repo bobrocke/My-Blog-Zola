@@ -61,17 +61,17 @@ Breakpoints
   /*
   Slate-based neutral palette — cool, modern undertone
   */
-  --color-gray-0: #f8fafc;
-  --color-gray-10: #f1f5f9;
-  --color-gray-20: #e2e8f0;
-  --color-gray-30: #cbd5e1;
-  --color-gray-40: #94a3b8;
-  --color-gray-50: #64748b;
-  --color-gray-60: #475569;
-  --color-gray-70: #334155;
-  --color-gray-80: #1e293b;
-  --color-gray-90: #0f172a;
-  --color-gray-100: #020617;
+  --color-neutral-0: #f8fafc;
+  --color-neutral-10: #f1f5f9;
+  --color-neutral-20: #e2e8f0;
+  --color-neutral-30: #cbd5e1;
+  --color-neutral-40: #94a3b8;
+  --color-neutral-50: #64748b;
+  --color-neutral-60: #475569;
+  --color-neutral-70: #334155;
+  --color-neutral-80: #1e293b;
+  --color-neutral-90: #0f172a;
+  --color-neutral-100: #020617;
 
   /*
   Accent — slate-blue, refined and professional
@@ -83,15 +83,15 @@ Breakpoints
   /*
   Light Theme
   */
-  --color-text-primary: var(--color-gray-80);
-  --color-text-secondary: var(--color-gray-50);
+  --color-text-primary: var(--color-neutral-80);
+  --color-text-secondary: var(--color-neutral-50);
   --color-text-accent: var(--color-accent);
-  --color-text-light: var(--color-gray-10);
-  --color-bg-page: var(--color-gray-10);
+  --color-text-light: var(--color-neutral-10);
+  --color-bg-page: var(--color-neutral-10);
   --color-bg-light: #ffffff;
-  --color-bg-lightest: var(--color-gray-0);
-  --color-bg-darkest: var(--color-gray-90);
-  --color-border: var(--color-gray-20);
+  --color-bg-lightest: var(--color-neutral-0);
+  --color-bg-darkest: var(--color-neutral-90);
+  --color-border: var(--color-neutral-20);
   --color-primary: var(--color-accent);
 
   /* Transitions */
@@ -113,15 +113,15 @@ Breakpoints
 Dark Theme
 */
 .dark {
-  --color-text-primary: var(--color-gray-20);
-  --color-text-secondary: var(--color-gray-40);
+  --color-text-primary: var(--color-neutral-20);
+  --color-text-secondary: var(--color-neutral-40);
   --color-text-accent: var(--color-accent-dark);
-  --color-text-light: var(--color-gray-20);
-  --color-bg-page: var(--color-gray-90);
-  --color-bg-light: var(--color-gray-80);
-  --color-bg-lightest: var(--color-gray-70);
-  --color-bg-darkest: var(--color-gray-100);
-  --color-border: var(--color-gray-70);
+  --color-text-light: var(--color-neutral-20);
+  --color-bg-page: var(--color-neutral-90);
+  --color-bg-light: var(--color-neutral-80);
+  --color-bg-lightest: var(--color-neutral-70);
+  --color-bg-darkest: var(--color-neutral-100);
+  --color-border: var(--color-neutral-70);
   --color-primary: var(--color-accent-dark);
 
   --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.4);
