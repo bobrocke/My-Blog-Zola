@@ -2,7 +2,7 @@
 title: Sublime Text in 2026?
 date: 2026-01-06
 slug: 2026-01-06-sublime-text-in-2026
-taxonomy:
+taxonomies:
   categories: ["Development"]
   tags: ["Sublime Text"]
 draft: false
