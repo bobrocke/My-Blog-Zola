@@ -3,15 +3,6 @@ Composition from CUBE CSS
 Layout rules
 */
 
-body {
-  margin: 0;
-  background-color: var(--color-bg-page);
-}
-
-footer {
-  display: flex;
-}
-
 /* Mobile: content fills the screen with white bg and padding */
 .content {
   background-color: var(--color-bg-light);
@@ -192,6 +183,7 @@ footer {
   font-family: var(--font-sans);
   font-size: var(--text-xs);
   align-items: center;
+  display: flex;
   gap: var(--space-s);
 
   ul {
