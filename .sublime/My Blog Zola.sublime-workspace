@@ -7,17 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/bob/Projects/My Blog Zola/templates/about.html",
-			"settings":
-			{
-				"buffer_size": 302,
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -114,72 +103,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/bob/Projects/My Blog Zola/templates/about.html",
-					"selected": true,
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								302,
-								302
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								}
-							],
-							"color_helper.scan":
-							{
-								"allow_scanning": false,
-								"color_class":
-								[
-									{
-										"class": "css-level-4",
-										"scopes": ""
-									}
-								],
-								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
-								"current_ext": ".html",
-								"current_syntax": "Tera/Tera",
-								"enabled": true,
-								"last_updated": 1778090095.26,
-								"scanning": "-comment"
-							},
-							"copilot.completion._is_modified": false,
-							"copilot.completion.is_visible": false,
-							"lsp_active": true,
-							"lsp_uri": "file:///Users/bob/Projects/My%20Blog%20Zola/templates/about.html",
-							"syntax": "Packages/Tera/Tera.sublime-syntax",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1778090775.61,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -290,7 +213,7 @@
 		"copilot.conversation.group_id": -1,
 		"copilot.conversation.is_visible": false,
 		"copilot.conversation.is_waiting": false,
-		"copilot.conversation.last_active_view_id": 27,
+		"copilot.conversation.last_active_view_id": -1,
 		"copilot.conversation.original_layout": null,
 		"copilot.conversation.reference_block_state":
 		{
