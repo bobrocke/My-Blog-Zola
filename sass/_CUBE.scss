@@ -3,15 +3,6 @@ Composition from CUBE CSS
 Layout rules
 */
 
-body {
-  margin: 0;
-  background-color: var(--color-bg-page);
-}
-
-footer {
-  display: flex;
-}
-
 /* Mobile: content fills the screen with white bg and padding */
 .content {
   background-color: var(--color-bg-light);
@@ -53,7 +44,7 @@ Utilities from CUBE CSS
 CSS classes that do one job and do that one job well.
 */
 
-/* Default: de-emphasised / disabled */
+/* Default: de-emphasized / disabled */
 .inactive {
   color: var(--color-text-secondary);
 }
@@ -77,7 +68,7 @@ CSS classes that do one job and do that one job well.
 
 /*
 Blocks from CUBE CSS
-A block is a skeletal component or organisational structure.
+A block is a skeletal component or organizational structure.
 */
 
 /*
@@ -192,6 +183,7 @@ footer {
   font-family: var(--font-sans);
   font-size: var(--text-xs);
   align-items: center;
+  display: flex;
   gap: var(--space-s);
 
   ul {
@@ -394,7 +386,7 @@ nav {
 
     /*
     Exception: nav .inactive = current page.
-    Overrides the utility's "de-emphasised" default with an accent highlight.
+    Overrides the utility's "de-emphasized" default with an accent highlight.
     */
     .nav-list li.inactive {
       color: var(--color-accent-dark);
